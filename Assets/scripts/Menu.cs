@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
+    public GameObject PauseScreen;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,5 +27,17 @@ public class Menu : MonoBehaviour
     public void ExitButton()
     {
         Application.Quit();
+    }
+
+    public void PauseButton()
+    {
+        PauseScreen.SetActive(true);
+        Time.timeScale = 0f;
+    }
+
+    public void Resume()
+    {
+        PauseScreen.SetActive(false);
+        Time.timeScale = 1f;
     }
 }

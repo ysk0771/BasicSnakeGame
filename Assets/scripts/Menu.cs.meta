@@ -3,7 +3,9 @@ guid: 961a090e560394941b9bc1a946af60b3
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - PausePanel: {fileID: 5932406676768168038, guid: 3e44b35442f29c94680c6510042261b0,
+      type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

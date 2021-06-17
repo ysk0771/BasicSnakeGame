@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
+    path: Assets/Scenes/labirent.unity
+    guid: 2d07552d47d90224da9f94a8a2589abe
+  - enabled: 1
     path: Assets/Scenes/GameOver.unity
     guid: 82f031dc4233b5f4c98378ab81a7389b
   m_configObjects: {}

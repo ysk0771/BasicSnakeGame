@@ -149,7 +149,9 @@ public class Snake : MonoBehaviour
             ASource.PlayOneShot(sound,0.7f);
                         //sayi değişkeninde score değerini tutuyoruz
             Sayi++;
+
             //start fonksiyonunda score text objesine eşitlendi ve text erişip skoru düzenliyoruz
+           
             score.text = "Score:" + Sayi;
             // Load Prefab into the world
             GameObject g = (GameObject)Instantiate(tailPrefab,
@@ -187,6 +189,11 @@ public class Snake : MonoBehaviour
 
             // Remove the Food
             Destroy(coll.gameObject);
+
+            if (Sayi == 4)
+            {
+                SceneManager.LoadScene("labirent", LoadSceneMode.Single);
+            }
         }
         // Collided with Tail or Border
         else
